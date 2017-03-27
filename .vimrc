@@ -1,6 +1,16 @@
 set nocompatible
 filetype off
 
+" Deactivate arrows
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
+
 " Vundle Plugin installer/manage
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
