@@ -40,3 +40,8 @@ command! Maketags !ctags -R .
 
 " map nertree to ctrl-n
 map <C-n> :NERDTreeToggle<CR>
+
+" autocomplete scroll up an down to j and k
+inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
+inoremap <expr> k ((pumvisible())?("\<C-p>"):("k"))
+
