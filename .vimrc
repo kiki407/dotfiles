@@ -11,6 +11,15 @@ noremap! <Left> <Esc>
 noremap  <Right> ""
 noremap! <Right> <Esc>
 
+imap <LEADER>' ''<ESC>i
+imap <LEADER>" ""<ESC>i
+imap <LEADER>[ []<ESC>i
+imap <LEADER>{ {}<ESC>i
+imap <LEADER>( ()<ESC>i
+
+nmap g<C-O> o<ESC>k
+nmap gO O<ESC>j
+
 " Vundle Plugin installer/manage
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -20,6 +29,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tomasr/molokai'
+Plugin 'vim-airline/vim-airline'
+Plugin 'powerline/fonts'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -45,3 +57,8 @@ map <C-n> :NERDTreeToggle<CR>
 inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
 inoremap <expr> k ((pumvisible())?("\<C-p>"):("k"))
 
+" airline conf
+set laststatus=2
+
+" Color Scheme molokai
+colorscheme molokai
