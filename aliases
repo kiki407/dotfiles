@@ -1,0 +1,5 @@
+alias ll='exa -l'
+alias el='exa -la'
+alias eT='exa -lT'
+alias monitor='~/scripts/monitors.sh'
+
