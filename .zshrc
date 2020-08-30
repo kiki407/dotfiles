@@ -1,5 +1,4 @@
-## Options section
-setopt correct                                                  # Auto correct mistakes
+## Options sectionsetopt correct                                                  # Auto correct mistakes
 setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
 setopt nocaseglob                                               # Case insensitive globbing
 setopt rcexpandparam                                            # Array expension with parameters
@@ -196,4 +195,6 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
   		ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
     ;;
 esac
-source dotfiles/aliases
+source $HOME/dotfiles/aliases
+source $HOME/dotfiles/quitcd.bash_zsh 
+export PATH=$PATH:/home/kil/bin
